@@ -4,15 +4,11 @@ System to Model (Simple but Powerful)
 
 We intentionally choose a system that is:
 
-physically interpretable
+1. physically interpretable
+2. time-dependent
+3. sensor-like
 
-time-dependent
-
-sensor-like
-
-Chosen System
-
-Thermal system (1st-order dynamic system)
+Chosen System: # Thermal system (1st-order dynamic system)
 → analogous to many real sensors (temperature, drift, latency, noise)
 
 Physical model:
@@ -21,48 +17,32 @@ Physical model:
 Where:
 
 T(t) = system state (measured)
-
 T_env = environment
-
 k = system constant
-
 u(t) = external input / disturbance
 
 Modeling Approach:
 Physics model → baseline prediction
-
 ML model → predicts residual error
 
 Evaluation & Validation:
 compare:
-
 RMSE
-
 MAE
-
 robustness to noise
-
 behavior under missing data
-
 generalization to unseen inputs
 
 Also include:
-
 qualitative plots
-
 error breakdowns
-
 failure cases 
 
 Tools:
 Python
-
 numpy
-
 pandas
-
 scikit-learn
-
 matplotlib
 
 scipy
